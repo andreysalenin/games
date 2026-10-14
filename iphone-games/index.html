@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#CFE9F7">
+<title>Momo, Lou, Pipoca and Cora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Grandstander:wght@800;900&display=swap">
+<style>
+/* A one-column page for a parent holding the iPhone: the four games, then how to put one on the
+   Home Screen. Same plum ink, card paper and chunky outlines as the games. Single light look by choice. */
+:root{
+  --sky:#CFE9F7;
+  --paper:#FFFDF7;
+  --ink:#2A2140;
+  --ink-soft:#5B5277;
+  --sun:#FFC83D;
+  --leaf:#24B865;
+  --font-display:"Grandstander","Arial Rounded MT Bold","Trebuchet MS",system-ui,sans-serif;
+  --font-read:"Andika","Andika New Basic","Century Gothic","Trebuchet MS",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{background:var(--sky)}
+body{margin:0;background:var(--sky);color:var(--ink);font:400 17px/1.5 var(--font-read);
+  padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+main{max-width:560px;margin:0 auto;display:grid;gap:22px}
+h1{margin:6px 0 0;font:900 clamp(30px,8vw,40px)/1.05 var(--font-display);text-wrap:balance}
+.lede{margin:-8px 0 0;color:var(--ink-soft);max-width:60ch}
+.games{display:grid;gap:12px}
+.game{display:flex;gap:14px;align-items:center;padding:12px 14px 12px 12px;background:var(--paper);color:var(--ink);text-decoration:none;
+  border:3px solid var(--ink);border-radius:20px;box-shadow:0 5px 0 var(--ink);transition:transform .08s,box-shadow .08s}
+.game:active{transform:translateY(3px);box-shadow:0 2px 0 var(--ink)}
+.game:focus-visible{outline:4px solid var(--leaf);outline-offset:3px}
+.game img{flex:none;width:72px;height:72px;border-radius:17px;border:2px solid var(--ink)}
+.txt{display:grid;gap:1px;min-width:0}
+.txt b{font:800 21px/1.15 var(--font-display)}
+.txt small{font-size:14px;font-weight:700;color:var(--ink-soft);letter-spacing:.01em}
+.who{font-size:15px;line-height:1.35}
+section{background:var(--paper);border:3px solid var(--ink);border-radius:20px;padding:16px 18px 18px}
+h2{margin:0 0 8px;font:800 22px/1.2 var(--font-display);text-wrap:balance}
+ol{margin:0;padding-left:24px;display:grid;gap:8px}
+li::marker{font-weight:700}
+.tips{margin:0;padding-left:20px;display:grid;gap:8px}
+.k{font-weight:700;white-space:nowrap}
+</style>
+</head>
+<body>
+<main>
+  <h1>Momo, Lou, Pipoca and Cora</h1>
+  <p class="lede">Four language games. Open one in Safari, then add it to the Home Screen so it opens like an app, full screen and without internet.</p>
+  <nav class="games" aria-label="Games">
+      <a class="game" href="momo/" lang="fr">
+        <img src="momo/icon-180.png" alt="" width="72" height="72">
+        <span class="txt"><b>Momo a faim</b><small lang="en">French · reading and counting</small><span class="who" lang="en">Momo the monster orders food; read the order and serve it.</span></span>
+      </a>
+      <a class="game" href="lou/" lang="fr">
+        <img src="lou/icon-180.png" alt="" width="72" height="72">
+        <span class="txt"><b>Lou le hibou</b><small lang="en">French · listening, for little ones</small><span class="who" lang="en">Lou the owl says a word or a sentence; tap the right picture.</span></span>
+      </a>
+      <a class="game" href="pipoca/" lang="pt-BR">
+        <img src="pipoca/icon-180.png" alt="" width="72" height="72">
+        <span class="txt"><b>Pipoca tem fome</b><small lang="en">Portuguese · reading and counting</small><span class="who" lang="en">Pipoca the monster orders food; read the order and serve it.</span></span>
+      </a>
+      <a class="game" href="cora/" lang="pt-BR">
+        <img src="cora/icon-180.png" alt="" width="72" height="72">
+        <span class="txt"><b>Cora, a coruja</b><small lang="en">Portuguese · listening, for little ones</small><span class="who" lang="en">Cora the owl says a word or a sentence; tap the right picture.</span></span>
+      </a>
+  </nav>
+  <section>
+    <h2>Put a game on the Home Screen</h2>
+    <ol>
+      <li>Open the game above, in Safari.</li>
+      <li>Tap <span class="k">•••</span> next to the address bar, then <span class="k">Share</span>. On older iPhones the Share button is in the bottom bar.</li>
+      <li>Tap <span class="k">Add to Home Screen</span>. If it isn't in the list, tap <span class="k">Edit Actions</span> at the bottom and add it.</li>
+      <li>Leave <span class="k">Open as Web App</span> on and tap <span class="k">Add</span>.</li>
+      <li>Open the game once from its new icon while you have internet. After that it works offline.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Good to know</h2>
+    <ul class="tips">
+      <li>The games talk with the iPhone's own voices. For clearer ones, download an Enhanced French or Portuguese voice in <span class="k">Settings › Accessibility › Spoken Content › Voices</span>.</li>
+      <li>Each game's parents' screen picks the accent: France or Canada for Momo and Lou, Brazil or Portugal for Pipoca and Cora.</li>
+      <li>Progress stays on this iPhone, inside each game. Removing a game's icon from the Home Screen erases its progress.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
